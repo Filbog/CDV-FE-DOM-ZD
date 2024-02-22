@@ -1,0 +1,18 @@
+    /* Hide the default radio button */
+    input[type="radio"] {
+        display: none;
+    }
+
+    /* Create a custom radio button */
+    input[type="radio"] + label {
+        padding: 0px 10px;
+        background: #ddd;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Style the custom radio button when it's checked */
+    input[type="radio"]:checked + label {
+        background: #bbb;
+    }

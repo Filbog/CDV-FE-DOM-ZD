@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Kalkulator </h1>
+    <form action="#" id='calc-form'>
+        <!-- Liczby -->
+        <div class="nums">
+            <label for="num1">Liczba 1</label>
+            <input type="text" id="num1" required>
+            <label for="num2">Liczba 2</label>
+            <input type="text" id="num2" required>
+        </div>
+
+        <!-- Operacja -->
+        <div class="operation-radio-btns">
+            <input type="radio" id="add" name="operation" value="add" checked>
+            <label for="add">
+                <h3>+</h3>
+            </label>
+
+            <input type="radio" id="subtract" name="operation" value="subtract">
+            <label for="subtract">
+                <h3>-</h3>
+            </label>
+
+            <input type="radio" id="multiply" name="operation" value="multiply">
+            <label for="multiply">
+                <h3>*</h3>
+            </label>
+
+            <input type="radio" id="divide" name="operation" value="divide">
+            <label for="divide">
+                <h3>/</h3>
+            </label>
+        </div>
+        <!-- Submit btn -->
+        <button class='btn btn-dark' type="submit">Oblicz</button>
+        <!-- Results -->
+        <h3>Wynik:</h3>
+        <p id="result"></p>
+        <h4>Poprzednie wyniki:</h4>
+        <div id="previous-calculations"></div>
+    </form>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
